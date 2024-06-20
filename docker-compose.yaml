@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres-test:
+    container_name: postgres-test
+    image: postgres:alpine3.19
+    environment:
+      POSTGRES_USER: christian
+      POSTGRES_PASSWORD: Perrosalchicha123
+      POSTGRES_DB: salchicha
+    ports:
+      - "5432:5432"
